@@ -66,18 +66,16 @@ We’re going to use ffmpeg in our script to create our access copy, and here’
 
 ffmpeg -i input_file -c:v libx264 -pix_fmt yuv420p -preset veryslow -crf 18 -c:a copy output_file  
 
-[ffmpeg wiki geared towards archivsts](https://github.com/amiaopensource/ffmpeg/wiki)
-[ffmpeg bug tracker and wiki](https://trac.ffmpeg.org/wiki)
+[ffmpeg wiki geared towards archivsts](https://github.com/amiaopensource/ffmpeg/wiki)  
+[ffmpeg bug tracker and wiki](https://trac.ffmpeg.org/wiki)  
 
 The other pieces of open source software we’re going to use in our packaging script are metadata-related. We’ll use [mediainfo](https://mediaarea.net/en/MediaInfo) to acquire technical metadata about our files. 
 
 ok, that was a lot of information. As I’ve mentioned, I’ve tried to compile as many resources as I could on our symposium’s github page, along with the text of this presentation, so that you can refer back to it and learn more at your own pace.  
 
-
+###Packaging Script Demo
 
 So the script that I’m going to demonstrate is written in a language called bash, which only works in Mac operating systems, but is coming to windows soon. I think you could rewrite this script in a language that is compatible for macs, but I don’t know those languages, so I can’t really help you. 
-
-I wrote the script thinking about the OAIS model, which stands for Open Archival Information System. OAIS is a standard used in digital preservation 
 
 ###Storage of Audiovisual Materials
 
