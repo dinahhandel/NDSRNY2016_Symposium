@@ -1,5 +1,5 @@
 ##OVERVIEW
-A list of resources related to the BagIt specification or implementations. If you would like to add to this list, please submit a [Pull Request](https://github.com/dinahhandel/ndsr-2016-bagit/pulls) or add an [Issue](https://github.com/dinahhandel/ndsr-2016-bagit/issues). We appreciate any contributions.
+A list of resources related to the BagIt specification or implementations. If you would like to add to this list, please submit a [Pull Request](https://github.com/dinahhandel/NDSRNY2016_Symposium/pulls) or add an [Issue](https://github.com/dinahhandel/NDSRNY2016_Symposium/issues). We appreciate any contributions.
 
 ##RESOURCES
 - The Internet Engineering Task Force (IETF), **BagIt Specification** (last updated January 26, 2016): https://tools.ietf.org/html/draft-kunze-bagit-13
