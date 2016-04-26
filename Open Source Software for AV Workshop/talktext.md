@@ -86,7 +86,7 @@ The other pieces of open source software we’re going to use in our packaging s
 ok, that was a lot of information. As I’ve mentioned, I’ve tried to compile as many resources as I could on our symposium’s github page, along with the text of this presentation, so that you can refer back to it and learn more at your own pace.  
 
 ###Packaging Script Demo
-So the script that I’m going to demonstrate is written in a language called bash, which only works in Mac operating systems, but is coming to windows soon. I think you could rewrite this script in a language that is compatible for macs, but I don’t know those languages, so I can’t really help you. 
+So the script that I’m going to demonstrate is written in a language called bash, which works in Mac and Linux environments, and will be part of Windows 10. I don't know how to use Bash in a Windows environment though, so the demo will be in a Mac operating system.
 
 ###Storage of Audiovisual Materials
 As I've mentioned before, depending upon the size of your audiovisual files, setting up storage infrastructure can be very expensive. Rather than go into different options, I'm just going to offer some aspects to consider: 
