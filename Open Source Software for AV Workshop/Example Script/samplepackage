@@ -40,7 +40,7 @@ while [ "${*}" != "" ] ; do
 	#create dfxml metadata file in metadata directory 
 	
 	#encode an access copy with the file name as the media id and add an _access
-	ffmpeg -i "${INPUT}" 
+	ffmpeg -i "${INPUT}" -c:v libx264 -pix_fmt yuv420p -preset veryslow -crf 18 -c:a copy [output file]
 	
 	#move the preservation master into the videofiles directory 
 	mv -v -n "${INPUT}" "${VIDEOFILES}"
