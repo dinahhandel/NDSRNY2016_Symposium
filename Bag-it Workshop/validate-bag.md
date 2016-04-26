@@ -35,4 +35,4 @@ From the [BagIt spec](https://tools.ietf.org/html/draft-kunze-bagit-13#section-3
    - According the [BagIt spec](https://tools.ietf.org/html/draft-kunze-bagit-13#section-3), "tag files that do not appear in a tag manifest can be modified, added to, or removed from a bag without impacting the completeness or validity of the bag". 
 
 
-**Still can't get enough BagIt? Check out [more activities around creating, modifying, and validating bags](more-bag-activities.md).**
+**Still can't get enough BagIt? Check out [more activities around creating, modifying, and validating bags](https://github.com/dinahhandel/NDSRNY2016_Symposium/blob/master/Bag-it%20Workshop/more-bag-activities.md).**
