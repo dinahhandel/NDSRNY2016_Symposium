@@ -5,7 +5,7 @@ Instructions for creating a BagIt bag with the Python build.
 ## BEFORE YOU BEGIN
 
 - You [installed Python BagIt](install-directions.md).
-- You downloaded the [zip package of samples and resources](https://github.com/kgrons/ndsr-2016-bagit/blob/master/NDSR-NYC_BagIt.zip). Save **A COPY** of the _NDSR_BagIt_samples_01_ folder on your Desktop. (Leave the downloaded zipped version in your Downloads folder.)
+- You downloaded the [zip package of samples and resources](https://github.com/dinahhandel/NDSRNY2016_Symposium/blob/master/Bag-it%20Workshop/NDSR-NYC_BagIt.zip). Save **A COPY** of the _NDSR_BagIt_samples_01_ folder on your Desktop. (Leave the downloaded zipped version in your Downloads folder.)
 
 ## CREATING BAGS WITH BAGIT ON THE COMMAND LINE
 
@@ -48,4 +48,4 @@ Instructions for creating a BagIt bag with the Python build.
        - **tagmanifest-md5.txt** : Inventory of information files (not the payload) and associated checksums. This is essential in ensuring the metadata has not been corrupted during bagging. 
 
 
-**Ready for more? Head over to the directions for [validating a bag](https://github.com/dinahhandel/ndsr-2016-bagit/blob/master/validate-bag.md).**
+**Ready for more? Head over to the directions for [validating a bag](https://github.com/dinahhandel/NDSRNY2016_Symposium/blob/master/Bag-it%20Workshop/validate-bag.md).**
