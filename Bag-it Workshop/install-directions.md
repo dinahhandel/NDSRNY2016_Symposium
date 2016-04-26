@@ -20,4 +20,4 @@ Python v2.6+ is required.
 QUESTIONS?
 ------------
 - You need to have _pip_ installed. Easy-to-understand instructions about that are in the [2.2.2 Creating Bags from the Command-Line](http://metaarchive.org/public/resources/neh/research/BagIt_Usage_Instructions.pdf) section of the __BagIt Usage Instructions__ from the Educopia Institute/MetaArchive team (which includes Matt Schultz, Stephen Eisenhaur, and Nick Krabbenhoeft)
-- Still having trouble? Add your question to the [Issues](https://github.com/kgrons/ndsr-2016-bagit/issues) section of this repository and we will figure it out together. 
+- Still having trouble? Add your question to the [Issues](https://github.com/dinahhandel/NDSRNY2016_Symposium/issues) section of this repository and we will figure it out together. 
