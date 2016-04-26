@@ -1,0 +1,56 @@
+#!/bin/bash
+#this script creates a simple archival information package in which the data objects are placed into a directory called video files and the metadata files (or whatever they are called in OAIS) are placed into a directory called metadata, and both of these directories are stored in a directory based on the file name of the input file. 
+
+while [ "${*}" != "" ] ; do
+    INPUT="${1}"
+	PARENTDIR=$(dirname "${INPUT}")
+	#set up the directory structure of the package 
+	PACKAGE=$(mkdir ~/Desktop/${PARENTDIR}/)
+	METADATAFILES=$(mkdir ${PACKAGE}/metadata)
+	VIDEOFILES=$(mkdir ${PACKAGE}/videofiles)
+    shift
+	
+	#ask questions about the input to create a short descriptive metadata text file
+	cowsay -s "Rename the file with a simple unique identifier"
+	echo -n ":: "
+	read MEDIAID
+	
+	cowsay -s "Who is the creator of this file?"
+	echo -n ":: "
+	read CREATOR
+
+	cowsay -s "When was this file created?"
+	echo -n ":: "
+	read DATECREATED
+
+	cowsay -s "Provide a short description of the file."
+	echo -n ":: "
+	read DESCRIPTION
+	
+	#write results to a file
+	"Creator: " "${CREATOR}" > "${METADATAFILES}/description.txt" #how to make it display on a new line?
+	"Date Created: " "${DATECREATED}" >> "${METADATAFILES}/description.txt"
+	
+	"Description: " "${DESCRIPTION}" >> "${METADATAFILES}/description.txt"
+	
+	#create mediainfo.xml file with technical metadata in metadata directory
+	#if you have this data in a structured format, it will be easier to input it into a spreadsheet if you ever do get software
+	MEDIAINFOXML="${METADATAFILES}/${MEDIAID}_mediainfo.xml"
+	
+	#create dfxml metadata file in metadata directory 
+	
+	#encode an access copy with the file name as the media id and add an _access
+	ffmpeg -i "${INPUT}" 
+	
+	#move the preservation master into the videofiles directory 
+	mv -v -n "${INPUT}" "${VIDEOFILES}"
+	
+	#create checksums for files in the videofiles directory 
+	cd "${VIDEOFILES}"
+	echo "Creating checksums for the video files..."
+	md5deep -drl . > "${METADATAFILES}/checksum.md5"
+	
+	#report that the script has completed processing media id 
+	echo "The processing of package ${MEDIAID} is complete."
+
+done
