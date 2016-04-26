@@ -12,17 +12,17 @@ The structure of this is going to follow something like this: I’m going to tal
 Video is created in a variety of ways, and there are many components to an audiovisual file. I should say that my examples aren’t exhaustive, as there isn’t enough time, nor do I have the knowledge to talk about the multitude of types of audiovisual materials.
 
 ####Analog media/video carriers:
-One way that video is created is through the recording of a video signal onto a carrier, such as a tape. This is a significantly less common way of creating video now, but if you have any media in your collection that isn't digital, it is probably on some sort of tape. There are lots of different types of tapes, you might be most familiar with VHS, but there are a wide variety of formats that you could encounter based on the archival setting you’re in- at CUNY TV where my residency is, we have UMatic, Betacam SP and SX primarily. Depending on how old your collection is, or what types of contents were being created, you may encounter open reel tapes in different sizes (early side of video), or cassettes such as Umatic, Betacam, VHS, video8 or hi8, DVCAM, and even audiovisual content stored on optical media such as DVDs. If you have analog media, changes are you’re going to want to migrate the contents on the carrier to a digital file. This can be done through using a playback machine, or deck, a device that captures the signal from the deck and software that converts that signal to a digital file. There are some open source solutions to the software side of things, but unfortunately decks and the devices that capture signals are expensive and sometimes hard to find. Some institutions build their own in-house digitization set-ups, and others receive grants or institutional funds to work with vendors for digitization. A commonly cited figure is that most analog media formats will be unplayable in about 20 years, due to the lack of available hardware to playback media. 
+One way that video is created is through the recording of a video signal onto a carrier, such as a tape. This is a significantly less common way of creating video now, but if you have any media in your collection that isn't digital, it is probably on some sort of tape. There are lots of different types of tapes, you might be most familiar with VHS, but there are a wide variety of formats that you could encounter based on the archival setting you’re in- at CUNY TV where my residency is, we have UMatic, Betacam SP and SX primarily. Depending on how old your collection is, or what types of contents were being created, you may encounter open reel tapes in different sizes (early side of video), or cassettes such as Umatic, Betacam, VHS, video8 or hi8, DVCAM, and even audiovisual content stored on optical media such as DVDs. If you have analog media, changes are you’re going to want to migrate the contents on the carrier to a digital file. This can be done through using a playback machine, or deck, a device that captures the signal from the deck and software that converts that signal to a digital file. There are some open source solutions to the software side of things, but unfortunately decks and the devices that capture signals are expensive and sometimes hard to find. Some institutions build their own in-house digitization set-ups, and others receive grants or institutional funds to work with vendors for digitization. A commonly cited figure is that most analog media formats will be unplayable in about 20 years, due to the lack of available hardware to playback media. Analog media is also susceptible to degredation due to storage in undesirable conditions. 
 
-Here's some resources for identifying, assessing, and inventorying analog media: 
-[UCLA Special Collections Materials](https://www.flickr.com/photos/124076687@N04/with/14292400264/)
-[Bay Area Video Coalition Audio Visual Compass Identification](http://avcompass.bavc.org/identify)
-[AVCC](https://www.avpreserve.com/tools/avcc/)
-[Columbia University Audio/Video Survey](http://library.columbia.edu/services/preservation/audiosurvey.html)
-[Texas Commission on the Arts Videotape Identification and Assessment Guide](http://www.arts.texas.gov/wp-content/uploads/2012/04/video.pdf)
-[California Audiovisual Preservation Project Guide to Identification of Audiovisual Formats](http://calpreservation.org/wp-content/uploads/2013/10/2013-Audiovisual-Formats_draft_webversion-2013oct15.pdf)
-[Preservation Self-Assessment Program](https://psap.library.illinois.edu/format-id-guide)
-[Inspection templates and forms for analog media](https://github.com/amiaopensource/analog-inspection)
+Here's some resources for identifying, assessing, and inventorying analog media:  
+[UCLA Special Collections Materials](https://www.flickr.com/photos/124076687@N04/with/14292400264/)  
+[Bay Area Video Coalition Audio Visual Compass Identification](http://avcompass.bavc.org/identify)  
+[AVCC](https://www.avpreserve.com/tools/avcc/)  
+[Columbia University Audio/Video Survey](http://library.columbia.edu/services/preservation/audiosurvey.html)  
+[Texas Commission on the Arts Videotape Identification and Assessment Guide](http://www.arts.texas.gov/wp-content/uploads/2012/04/video.pdf)  
+[California Audiovisual Preservation Project Guide to Identification of Audiovisual Formats](http://calpreservation.org/wp-content/uploads/2013/10/2013-Audiovisual-Formats_draft_webversion-2013oct15.pdf)  
+[Preservation Self-Assessment Program](https://psap.library.illinois.edu/format-id-guide)  
+[Inspection templates and forms for analog media](https://github.com/amiaopensource/analog-inspection)  
 
 ####Digital Video:
 Most video currently is created and stored digitally. From the short videos we create with our mobile devices, to higher quality production video, there are numerous ways to create born digital video. You can receive video in many different formats. Digital video files contain video data and a wrapper or container, which is metadata about the video file, and the video data itself. [maybe open video file in hex editor to show?] 
@@ -56,3 +56,11 @@ So the script that I’m going to demonstrate is written in a language called ba
 I wrote the script thinking about the OAIS model, which stands for Open Archival Information System. OAIS is a standard used in digital preservation 
 
 (NEED TO TALK ABOUT STORAGE)
+
+
+
+
+
+
+###General Resources
+[New England Archivists AV 101 Workshop: Resources](https://docs.google.com/document/d/1CzJ3B4m_V6pXmMacdRuw_MJpy22p5FqlLC8nPq0JLOY/edit)
