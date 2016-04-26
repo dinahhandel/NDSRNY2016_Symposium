@@ -8,7 +8,7 @@ Materials in this repo provide supplemental and installation information related
 Check out [LoC's bagit-python page](http://libraryofcongress.github.io/bagit-python/) and  [DURASPACE](https://wiki.duraspace.org/display/DPNC/BagIt+Specification)'s simple unpacking of the BagIt specification.
 
 ## RECOMMENDED TUTORIAL ORDER
-1. [Preparation: Installation and sample materials](https://github.com/dinahhandel/ndsr-2016-bagit/blob/master/before-the-workshop.md)
-2. [Create bags](https://github.com/kgrons/ndsr-2016-bagit/blob/master/create-bag.md)
-3. [Validate bags](https://github.com/kgrons/ndsr-2016-bagit/blob/master/validate-bag.md)
-4. [Additional exercises](https://github.com/kgrons/ndsr-2016-bagit/blob/master/more-bag-activities.md)
+1. [Preparation: Installation and sample materials](https://github.com/dinahhandel/NDSRNY2016_Symposium/blob/master/Bag-it%20Workshop/before-the-workshop.md)
+2. [Create bags](https://github.com/dinahhandel/NDSRNY2016_Symposium/blob/master/Bag-it%20Workshop/create-bag.md)
+3. [Validate bags](https://github.com/dinahhandel/NDSRNY2016_Symposium/blob/master/Bag-it%20Workshop/validate-bag.md)
+4. [Additional exercises](https://github.com/dinahhandel/NDSRNY2016_Symposium/blob/master/Bag-it%20Workshop/more-bag-activities.md)
