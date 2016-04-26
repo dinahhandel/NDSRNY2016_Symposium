@@ -8,6 +8,9 @@ My approach for the workshop is to talk about both tools and frameworks to use w
 
 The structure of this is going to follow something like this: I’m going to talk a little bit about microservices and NDSA levels of digital preservation, and then I'll discuss formats, containers, and codecs, and the differences between analog video that has been digitized, born digital video, and how to think about preservation masters and derivative copies. Then I’m going to show you a little script that I wrote which will create a really simple archival information package (I’ll also introduce that concept) that contains the original file, an access copy, descriptive and technical metadata, and a checksum document. The script will be available on github, so you can download it and modify it yourself if you’d like. I’ll break down each part of the script, in the hopes of making it clear what it is doing, in non-technical terms. Finally, I'll end with talking about some of the options for storage for audiovisual materials, which are typically very large in size. 
 
+###OAIS, microservices, NDSA Levels of Digital Preservation
+
+
 ###Formats, Containers/Wrappers, and Codecs
 Video is created in a variety of ways, and there are many components to an audiovisual file. I should say that my examples aren’t exhaustive, as there isn’t enough time, nor do I have the knowledge to talk about the multitude of types of audiovisual materials.
 
@@ -55,7 +58,7 @@ So the script that I’m going to demonstrate is written in a language called ba
 
 I wrote the script thinking about the OAIS model, which stands for Open Archival Information System. OAIS is a standard used in digital preservation 
 
-(NEED TO TALK ABOUT STORAGE)
+###Storage of Audiovisual Materials
 
 
 
