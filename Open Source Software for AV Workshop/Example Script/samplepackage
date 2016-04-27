@@ -44,9 +44,9 @@ while [ "${*}" != "" ] ; do
     echo "${VIDEOFILES}"
 	
 	#write results to a file
-	_writemetadata "Creator: " "${CREATOR}"
-	_writemetadata "Date Created: " "${DATECREATED}" 
-	_writemetadata "Description: " "${DESCRIPTION}"
+	_writemetadata "Creator" "${CREATOR}"
+	_writemetadata "Date Created" "${DATECREATED}" 
+	_writemetadata "Description" "${DESCRIPTION}"
     
 	#encode an access copy with the file name as the media id and add an _access
     OUTPUT="${MEDIAID}_access.mov"
