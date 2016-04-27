@@ -44,9 +44,12 @@ while [ "${*}" != "" ] ; do
     echo "${VIDEOFILES}"
 	
 	#write results to a file
-	_writemetadata "Creator" "${CREATOR}"
-	_writemetadata "Date Created" "${DATECREATED}" 
-	_writemetadata "Description" "${DESCRIPTION}"
+	_writemetadata "Creator: " "${CREATOR}"
+	_writemetadata "Date Created: " "${DATECREATED}" 
+	_writemetadata "Description: " "${DESCRIPTION}"
+    
+	MEDIAINFOXML1="${METADATAFILES}/preservation_master_mediainfo.xml"
+    mediaconch -mi -fx "${INPUT}" | xml fo > "${MEDIAINFOXML1}"
     
 	#encode an access copy with the file name as the media id and add an _access
     OUTPUT="${MEDIAID}_access.mov"
@@ -54,12 +57,8 @@ while [ "${*}" != "" ] ; do
 	
 	#create mediainfo.xml file with technical metadata in metadata directory
 	#if you have this data in a structured format, it will be easier to input it into a spreadsheet if you ever do get software
-	MEDIAINFOXML1="${METADATAFILES}/${INPUT}_mediainfo.xml"
-    mediaconch -mi -fx "${INPUT}" | xml fo > "${MEDIAINFOXML1}"
 	MEDIAINFOXML2="${METADATAFILES}/${OUTPUT}_mediainfo.xml"
     mediaconch -mi -fx "${OUTPUT}" | xml fo > "${MEDIAINFOXML2}"
-    
-    
 	
 	#move the preservation master and access copy into the videofiles directory 
 	mv -v -n "${INPUT}" "${VIDEOFILES}"
@@ -69,6 +68,7 @@ while [ "${*}" != "" ] ; do
 	cd "${VIDEOFILES}"
 	echo "Creating checksums for the video files..."
 	md5deep -drl . > "${METADATAFILES}/checksum.md5"
+    cd 
 	
 	#report that the script has completed processing media id 
 	echo "The processing of package ${MEDIAID} is complete."
