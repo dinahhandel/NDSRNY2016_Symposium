@@ -8,3 +8,4 @@ A list of resources related to the BagIt specification or implementations. If yo
 - Library of Congress, **BagIt (Java)**: https://github.com/LibraryOfCongress/bagit-java
 - Library of Congress, **Bagit: Transferring Content for Digital Preservation (overview video)**: http://www.digitalpreservation.gov/multimedia/videos/bagit0609.html
 - Dave Pcolar, **BagIt Specification for DPN Content Bags** (last modified on Apr 21, 2016): https://wiki.duraspace.org/display/DPNC/BagIt+Specification
+- MetaArchive, **BagIt Ingest Tools** : http://metaarchive.org/bagit-tools
