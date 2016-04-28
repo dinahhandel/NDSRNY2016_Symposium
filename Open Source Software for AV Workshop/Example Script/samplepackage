@@ -14,9 +14,20 @@ _writemetadata(){
 while [ "${*}" != "" ] ; do
     INPUT="${1}"
     shift
+    
+    #set up the directory structure of the package 
+	PACKAGE="$HOME/Desktop/${MEDIAID}/"
+    mkdir -p "${PACKAGE}"
+    echo "${PACKAGE}"
+	METADATAFILES="${PACKAGE}/metadata/"
+    mkdir -p "${METADATAFILES}"
+    echo "${METADATAFILES}"
+	VIDEOFILES="${PACKAGE}/videofiles/"
+    mkdir -p "${VIDEOFILES}"
+    echo "${VIDEOFILES}"
 	
 	#ask questions about the input to create a short descriptive metadata text file
-	cowsay -s "Rename the file with a simple unique identifier"
+	cowsay -s "Provide an identifier for the access copy of the file"
 	echo -n ":: "
 	read MEDIAID
 	
@@ -31,25 +42,12 @@ while [ "${*}" != "" ] ; do
 	cowsay -s "Provide a short description of the file."
 	echo -n ":: "
 	read DESCRIPTION
-    
-    #set up the directory structure of the package 
-	PACKAGE="$HOME/Desktop/${MEDIAID}/"
-    mkdir -p "${PACKAGE}"
-    echo "${PACKAGE}"
-	METADATAFILES="${PACKAGE}/metadata/"
-    mkdir -p "${METADATAFILES}"
-    echo "${METADATAFILES}"
-	VIDEOFILES="${PACKAGE}/videofiles/"
-    mkdir -p "${VIDEOFILES}"
-    echo "${VIDEOFILES}"
 	
 	#write results to a file
+    _writemetadata "Media ID: " "${MEDIAID}"
 	_writemetadata "Creator: " "${CREATOR}"
 	_writemetadata "Date Created: " "${DATECREATED}" 
 	_writemetadata "Description: " "${DESCRIPTION}"
-    
-	MEDIAINFOXML1="${METADATAFILES}/preservation_master_mediainfo.xml"
-    mediaconch -mi -fx "${INPUT}" | xml fo > "${MEDIAINFOXML1}"
     
 	#encode an access copy with the file name as the media id and add an _access
     OUTPUT="${MEDIAID}_access.mov"
@@ -57,7 +55,9 @@ while [ "${*}" != "" ] ; do
 	
 	#create mediainfo.xml file with technical metadata in metadata directory
 	#if you have this data in a structured format, it will be easier to input it into a spreadsheet if you ever do get software
-	MEDIAINFOXML2="${METADATAFILES}/${OUTPUT}_mediainfo.xml"
+	MEDIAINFOXML1="${METADATAFILES}/preservation_master_mediainfo.xml"
+    mediaconch -mi -fx "${INPUT}" | xml fo > "${MEDIAINFOXML1}"
+	MEDIAINFOXML2="${METADATAFILES}/${MEDIAID}_mediainfo.xml"
     mediaconch -mi -fx "${OUTPUT}" | xml fo > "${MEDIAINFOXML2}"
 	
 	#move the preservation master and access copy into the videofiles directory 

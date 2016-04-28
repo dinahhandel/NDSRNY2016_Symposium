@@ -41,7 +41,7 @@ A container (sometimes referred to as a wrapper) is important, as it communicate
 [show output of container metadata?]  
 
 Some common containers are .avi, which stands for audio video interleave, and is associated with the windows operating system, .mov (which is part of QuickTime) and is associated with the Mac operating system. There’s also .mkv (matroska) and .mxf (material exchange format) which are both playable on both Mac and Windows operating systems.  
-There are benefits to choosing some containers over others, including whether or not the container is still actively developed or if it is an open specification, what operating system you use, and whether the it is widely in use by the community. There are plenty of other containers that you could come across with digital video files, and I encourage you to look at the Wikipedia links listed below. 
+There are benefits to choosing some containers over others, including whether or not the container is still actively developed or if it is an open specification, what operating system you use, and whether it is widely in use by the community. There are plenty of other containers that you could come across with digital video files, and I encourage you to look at the Wikipedia links listed below. 
 
 [Digital Container Format](https://en.wikipedia.org/wiki/Digital_container_format)  
 [Comparison of Video Container Formats](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats)  
@@ -53,16 +53,16 @@ In addition to containers, there’s also the video’s codec. This is one of th
 [fix this section, add visual from Dave, clarify difference more between codec and encoding]
 
 #####Encoding
-Encoding is the output of the specification of the codec as applied to video data. There are many different encodings, and one way you might hear them referred to is lossy or lossless. This description has to do with how video data is compressed. An uncompressed codec means that none of the video data is compressed, and it is considered the standard for preservation master files. However, this also means that the file size of the video is quite large, and this isn’t typically a sustainable solution for many archives, as larger video sizes mean the need for more storage, which is ultimately more expensive. If you aren’t able to handle using an uncompressed encoding, there is another option. An encoding that has lossless compression is smaller in size than an uncompressed codec, and lossless means that although the data is compressed, the file will decide to the same data as the original encoding. Some well-known lossless encoding specifications are FFV1 version 3, lossless JPEG2000, and lossless h264. Similar to wrappers or containers, there are some benefits to choosing one codec over another, including openness, wide use, and whether or not the particular codec is known to produce artifacts from the compression process that result in playback errors of the video files. 
+Encoding is the output of the specification of the codec as applied to video data. There are many different encodings, and one way you might hear them referred to is lossy or lossless. This description has to do with how video data is compressed. An uncompressed codec means that none of the video data is compressed, and it is considered the standard for preservation master files. However, this also means that the file size of the video is quite large, and this isn’t typically a sustainable solution for many archives, as larger video sizes mean the need for more storage, which is ultimately more expensive. If you aren’t able to handle using an uncompressed encoding, there is another option. An encoding that has lossless compression is smaller in size than an uncompressed codec, and lossless means that although the data is compressed, the file will decode to the same data as the original encoding. Some well-known lossless encoding specifications are FFV1 version 3, lossless JPEG2000, and lossless h264. Similar to wrappers or containers, there are some benefits to choosing one encoding over another, including openness, wide use, and whether or not the particular codec is known to produce artifacts from the compression process that result in playback errors of the video files. 
 
 [List of codecs](https://en.wikipedia.org/wiki/List_of_codecs)  
 [List of Open Source Codecs](https://en.wikipedia.org/wiki/List_of_open-source_codecs)  
 [Wikipedia page for codec](https://en.wikipedia.org/wiki/Codec)  
   
 #####Bit Depth
-Finally, something else to consider about digital video files is their bit depth. Bit depth is the resolution quality of the video. there’s 10 bit, which is the highest quality (and contributes to a larger file size), and 8 bit, which is slightly smaller but also of a slightly lower quality. 
+Finally, something else to consider about digital video files is their bit depth. Bit depth is the resolution quality of the video. Most commonly used are 10 bit, which is the highest quality (and contributes to a larger file size), and 8 bit, which is slightly smaller but also of a slightly lower quality, but it is possible for videos to have other bit depths as well. 
 
-So, when you’re working with video files, these are all factors to consider. Typically, when you’re digitizing (or having a vendor digitize), or working with a production unit that is exporting video from an editing software, you can specify which container, codec, and bit depth you’d like to use, although these are limited by one another, for example many codecs support limited values of bit depths. 
+So, when you’re working with video files, these are all factors to consider. Typically, when you’re digitizing (or having a vendor digitize), or working with a production unit that is exporting video from an editing software, you can specify which container, encoding, and bit depth you’d like to use, although these are limited by one another, for example many encodings support limited values of bit depths. 
 
 ###ffmpeg 
 ffmpeg is an open source software that is used to decode and encode audiovisual files. You can use ffmpeg to transcode from one format to another. ffmpeg can be used from the command line, but if you prefer using a graphical user interface to transcode files, I recommend the open source software [handbrake](https://handbrake.fr/).  
@@ -78,6 +78,8 @@ output (the resulting file and its location)
 We’re going to use ffmpeg in our script to create our access copy, and here’s the command that we’ll use:  
 
 ffmpeg -i input_file -c:v libx264 -pix_fmt yuv420p -preset veryslow -crf 18 -c:a copy output_file  
+
+need to add in explanation from ffmprovisr
 
 [ffmpeg wiki geared towards archivsts](https://github.com/amiaopensource/ffmpeg/wiki)  
 [ffmpeg bug tracker and wiki](https://trac.ffmpeg.org/wiki)  
