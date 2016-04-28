@@ -14,17 +14,6 @@ _writemetadata(){
 while [ "${*}" != "" ] ; do
     INPUT="${1}"
     shift
-    
-    #set up the directory structure of the package 
-	PACKAGE="$HOME/Desktop/${MEDIAID}/"
-    mkdir -p "${PACKAGE}"
-    echo "${PACKAGE}"
-	METADATAFILES="${PACKAGE}/metadata/"
-    mkdir -p "${METADATAFILES}"
-    echo "${METADATAFILES}"
-	VIDEOFILES="${PACKAGE}/videofiles/"
-    mkdir -p "${VIDEOFILES}"
-    echo "${VIDEOFILES}"
 	
 	#ask questions about the input to create a short descriptive metadata text file
 	cowsay -s "Provide an identifier for the access copy of the file"
@@ -42,6 +31,17 @@ while [ "${*}" != "" ] ; do
 	cowsay -s "Provide a short description of the file."
 	echo -n ":: "
 	read DESCRIPTION
+    
+    #set up the directory structure of the package 
+	PACKAGE="$HOME/Desktop/${MEDIAID}/"
+    mkdir -p "${PACKAGE}"
+    echo "${PACKAGE}"
+	METADATAFILES="${PACKAGE}/metadata/"
+    mkdir -p "${METADATAFILES}"
+    echo "${METADATAFILES}"
+	VIDEOFILES="${PACKAGE}/videofiles/"
+    mkdir -p "${VIDEOFILES}"
+    echo "${VIDEOFILES}"
 	
 	#write results to a file
     _writemetadata "Media ID: " "${MEDIAID}"
