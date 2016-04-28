@@ -42,3 +42,8 @@ To do this exercise, you will need to be running atleast **[Python 3](https://ww
 2. In the bag's data payload, modify text or image files. Delete a few payload files. Modify information in the generated BagIt text files (eg. _BagIt.txt_). 
 
 3. Validate the bag. What kind of error messages do you get? What do they mean? 
+
+## BAGIT RESOURCES
+
+Interested in learning more about use cases and implementations, or need a refresher on the spec? Check out and add to the [BagIt Resources list](https://github.com/dinahhandel/NDSRNY2016_Symposium/blob/master/Bag-it%20Workshop/bagit-resources.md).
+
